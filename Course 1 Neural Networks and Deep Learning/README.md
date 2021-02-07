@@ -232,6 +232,13 @@ where $$\mathbf{A}^{[l]} = [\mathbf{a}^{[l](1)}, \mathbf{a}^{[l](2)}, \dots, \ma
 
 ### 3.5. Gradient Descent for Neural Networks
 
+$$
+\begin{align}
+\mathbf{W}^{[l]} &= \mathbf{W}^{[l]} - \alpha \cdot d\mathbf{W}^{[l]} \\
+\mathbf{b}^{[l]} &= \mathbf{b}^{[l]} - \alpha \cdot d\mathbf{b}^{[l]}
+\end{align}
+$$
+
 Given single training example,
 $$
 \begin{align}
