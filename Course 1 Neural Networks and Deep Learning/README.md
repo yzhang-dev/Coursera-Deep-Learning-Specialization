@@ -41,7 +41,7 @@ z^{(i)} &= \mathbf{w}^{\top} \mathbf{x}^{(i)} + b \\
 $$
 where the parameters $$\mathbf{w} \in \mathbb{R}^{n_{x}}$$, $$b \in \mathbb{R}$$, and the activation function $$\operatorname{Sigmoid}(z) = \sigma(z) = \frac{1}{1 + e^{-z}}$$.
 
-Given $$m_{\text{train}}$$ examples, the predictions $$\hat{\mathbf{Y}} = [\hat{y}^{(i)}, \hat{y}^{(i)}, \dots , \hat{y}^{(m_{\text{train}})}]$$:
+Given $$m_{\text{train}}$$ examples, the predictions $$\hat{\mathbf{Y}} = [\hat{y}^{(1)}, \hat{y}^{(2)}, \dots , \hat{y}^{(m_{\text{train}})}]$$:
 $$
 \begin{align}
 \mathbf{Z} &= \mathbf{w}^{\top} \mathbf{X} + b \\

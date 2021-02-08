@@ -14,9 +14,9 @@ Applied ML is a highly **iterative** process.
 
 #### 1.1.2. Bias and Variance
 
-* High bias (depends on Train set performance): underfitting
+* **High Bias** (depends on Train set performance): underfitting
 
-* High variance (depends on Dev set performance): overfitting
+* **High Variance** (depends on Dev set performance): overfitting
 
 **Train set error vs. Dev set error** comparing to **optimal error** (sometimes called **base error** or **Bayes error**)
 
@@ -24,9 +24,9 @@ Applied ML is a highly **iterative** process.
 
 #### 1.1.3. Basic Recipe for Machine Learning
 
-* High bias (depends on Train set performance): bigger NN, train longer (and NN architectures search)
+* **High Bias**: bigger NN, train longer (and NN architectures search)
 
-* High variance (depends on Dev set performance): **more data**, regularization (and NN architectures search)
+* **High Variance**: **more data**, regularization (and NN architectures search)
 
 **Training a bigger NN almost never hurts so long as we have a well regularized network. And the main cost of training such a NN is just computational time.**
 
@@ -128,9 +128,9 @@ With drop out, all the features can get randomly eliminated, then the weights ar
 
 #### 1.2.5. Other Regularization
 
-* data augmentation
+* **Data Augmentation**
 
-* early stopping
+* **Early Stopping**
 
   By stopping gradient decent early, we're sort of mixing optimizing cost function and trying to not overfit together. But these two goals are kind of orthogonal. The advantage of it is that running the gradient descent process just once.
 
@@ -169,8 +169,8 @@ It turns out there is a partial solution that is **careful choice of initializin
 
 For $$\mathbf{W}^{[l]}$$,
 
-* when using `tanh`, initialize it so that the variance of the weights is $$\frac{1}{n_{l-1}}$$, or Xavier initialization, initialize it so that the variance of the weights is $$\frac{2}{n_{l} + n_{l-1}}$$
-* when using `ReLU`, initialize it so that the variance of the weights is $$\frac{2}{n_{l-1}}$$
+* when using `tanh`, initialize it so that the variance of the weights is $$\frac{1}{n_{l-1}}$$, or Xavier initialization, initialize it so that the variance of the weights is $$\frac{2}{n_{l} + n_{l-1}}$$;
+* when using `ReLU`, initialize it so that the variance of the weights is $$\frac{2}{n_{l-1}}$$.
 
 #### 1.3.5. Numerical Approximation of Gradients
 
@@ -201,12 +201,12 @@ Remember regularization term, but also notice that it doesn’t work with dropou
 
 #### 2.1.1. Batch vs. Min-Batch Gradient Descent
 
-* batch
+* Batch
   $$
   (\mathbf{X}, \mathbf{Y})
   $$
 
-* mini-batch
+* Mini-batch
   $$
   \{(\mathbf{X}^{\{1\}}, \mathbf{Y}^{\{1\}}), (\mathbf{X}^{\{2\}}, \mathbf{Y}^{\{2\}}), \cdots, (\mathbf{X}^{\{T\}}, \mathbf{Y}^{\{T\}})\}
   $$
@@ -339,7 +339,7 @@ Learning rate decay methods
 
 
 
-* exponential decay
+* Exponential decay
   $$
   \alpha = 0.95^{\text{epoch}} \alpha_{0}
   $$
@@ -353,8 +353,8 @@ Learning rate decay methods
 
 
 
-* use a learning rate that decreases in discrete steps
-* manual decay
+* Use a learning rate that decreases in discrete steps
+* Manual decay
 
 
 
@@ -380,8 +380,8 @@ Sample uniformly at random using an appropriate scale.
 
 #### 3.1.3. Hyperparameter Tuning in Practical: Pandas vs. Caviar
 
-* panda approach: babysitting one model
-* caviar approach: training many models in parallel
+* Panda approach: babysitting one model
+* Caviar approach: training many models in parallel
 
 
 
